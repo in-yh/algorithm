@@ -1,6 +1,7 @@
 # 1206_view
 # 2022-08-08
 
+# 90도 회전해서 생각해보기
 # 정답코드
 import sys # 내장모듈은 사용가능
 sys.stdin = open('input.txt', 'r') # 확장자까지 써야함, read
