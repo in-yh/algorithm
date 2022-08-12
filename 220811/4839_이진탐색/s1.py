@@ -5,7 +5,7 @@ import sys
 sys.stdin = open('input.txt', 'r')
 
 def binarySearch(a, N, key):
-    start = 0
+    start = 0 # 인덱스
     end = N-1
     cnt = 1 # cnt 초기값은 while 밖에! 안에 넣으면 while문 돌 때마다 초기화 되니..
     while start <= end:
@@ -24,7 +24,7 @@ T = int(input())
 for tc in range(1, T+1):
     P, Pa, Pb = map(int, input().split()) # P, Pa, Pb 
     
-    cnt_Pa = binarySearch(list(range(1, P+1)), P, Pa)
+    cnt_Pa = binarySearch(list(range(1, P+1)), P, Pa) # 1 ~ P(인덱스는 0 ~ P-1)
     cnt_Pb = binarySearch(list(range(1, P+1)), P, Pb)
 
     if cnt_Pa < cnt_Pb:
