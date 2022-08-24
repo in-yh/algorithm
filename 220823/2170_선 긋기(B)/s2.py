@@ -12,7 +12,7 @@ for i in range(N):
 L.sort() # 시작점 기준 정렬(무조건 앞에 있는 튜플의 시작점이 앞에 있다.)
 
 result = L[0][1] - L[0][0]
-for j in range(3):
+for j in range(N-1):
     # 뒤 튜플 시작점과 종착점이 모두 앞 튜플 종착점보다 작은 경우
     if L[j][1] >= L[j+1][0] and L[j][1] >= L[j+1][1]:
         pass
